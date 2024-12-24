@@ -20,6 +20,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import Image from "next/image";
+import Link from "next/link";
 
 const data = {
   navMain: [
@@ -66,11 +67,11 @@ export function AppSidebar({
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
-              <a href="/" className="my-3" >
+              <Link href="/" className="my-3" >
                 <div className="grid text-left text-sm leading-tight">
                   <Image src={Logo} alt="logo" width={100} height={100} />
                 </div>
-              </a>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
